@@ -5,7 +5,7 @@ import 'package:flutter_world_time_me/pages/loading.dart';
 
 void main() {
   runApp(MaterialApp(
-    initialRoute: '/home',
+    initialRoute: '/',
     routes: {
       '/': (context) => Loading(),
       '/home': (context) => Home(),

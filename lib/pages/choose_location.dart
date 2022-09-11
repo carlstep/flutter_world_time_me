@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 
 class ChooseLocation extends StatefulWidget {
@@ -10,28 +8,6 @@ class ChooseLocation extends StatefulWidget {
 }
 
 class _ChooseLocationState extends State<ChooseLocation> {
-  void getData() async {
-    // simulate network request for a username
-    String username = await Future.delayed(Duration(seconds: 3), () {
-      return 'yoshi';
-    });
-
-    // simulate network request for user biography
-    String userBio = await Future.delayed(Duration(seconds: 2), () {
-      return 'rock star, born in england';
-    });
-
-    print('$username - $userBio');
-  }
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    getData();
-    print('hey...');
-  }
-
   @override
   Widget build(BuildContext context) {
     print('the information is loading...');
